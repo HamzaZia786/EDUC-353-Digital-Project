@@ -35,7 +35,7 @@ const CLASSROOMS = [
   {
     id: "science", icon: "🧪", subject: "Science", grade: "7th Grade", topic: "Plate Tectonics",
     color: C.science, light: C.scienceLight, pageBg: C.scienceSoft,
-    Organizer: "Series-of-Events Chain",
+    organizer: "Series-of-Events Chain",
     scenario: "Students read about earthquakes but can't connect why convection currents lead to ground shaking. The causal chain is buried in dense paragraphs.",
     whyWorks: "The chain makes invisible logic visible — each box triggers the next, so students trace cause-to-effect with their eyes before their pencil.",
     impact: "Students will move from memorizing vocabulary to explaining processes. \"Subduction\" becomes a step in a story rather than a word to remember.",
