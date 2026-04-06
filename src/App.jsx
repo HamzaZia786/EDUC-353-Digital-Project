@@ -618,7 +618,7 @@ function TeachersPage() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 18, marginBottom: 48 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 18, marginBottom: 48 }}>
           {[
             { num: "01", title: "Teach it explicitly", desc: "Model how to fill it in, thinking aloud about why each piece goes where. Don't just hand it out.", color: C.science, light: C.scienceLight },
             { num: "02", title: "Match to text structure", desc: "A Venn diagram for comparison. A chain for sequence. A web for multiple causes. The fit matters.", color: C.history, light: C.historyLight },
@@ -670,6 +670,7 @@ function TeachersPage() {
 export default function App() {
   const [tab, setTab] = useState("home");
   const activeClassroom = CLASSROOMS.find(c => c.id === tab);
+  useEffect(() => { window.scrollTo(0, 0); }, [tab]);
 
   return (
     <div style={{ background: C.cream, color: C.ink, minHeight: "100vh" }}>
